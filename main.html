@@ -10,12 +10,46 @@
         <h1>Royale Cases</h1>
         <nav>
             <ul>
-                <li><a href="#">Inicio</li>
-                <li><a href="#">Sobre nosotros</li>
-                <li><a href="#">Productos</li>
+                <li><a href="#inicio">Inicio</li>
+                <li><a href="#sobre nosotros">Sobre nosotros</li>
+                <li><a href="#productos">Productos</li>
                 <li><a href="#contacto">Contacto</li>
             </ul>
         </nav>
     </header>
+<main>
+    <section id="contacto">
+        <h2>Formulario de contacto</h2>
+        <p>rellena el formulario para enviarme tus comentarios o preguntas</p>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required placeholder="Escribe tu nombre">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+            <label for="message">Mensaje:</label>
+            <select id="message" required>
+                <option>venta</option>
+                <option>catalogo</option>
+                <option>dudas</option>
+                <option>sugerencias</option>
+            </select>
+            <textarea id="message" name="message" placeholder="Escribe tu mensaje" required></textarea>
+            <fieldset>
+                <legend>Información de contacto</legend>
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Escribe tu número de teléfono">
+                <label for="address">Dirección:</label>
+                <input type="text" id="address" name="address" required placeholder="Escribe tu dirección">
+                <label for="genero-masculino">Masculino</label>
+                <input type="radio" id="genero-masculino" name="genero" value="masculino">
+                <label for="genero-femenino">Femenino</label>
+                <input type="radio" id="genero-femenino" name="genero" value="femenino">
+                <label for="genero-otro">Otro</label>
+                <input type="radio" id="genero-otro" name="genero" value="otro">
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+</main>
 </body>
 </html>
